@@ -4,7 +4,9 @@
  */
 package core.Vehicle;
 
+import core.Shipping;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -13,4 +15,11 @@ import java.util.ArrayList;
 public abstract class Vehicle {
     protected float cargoCapacity;
     protected List<Shipping> shippings;
+
+    public Vehicle(float cargoCapacity) {
+        this.cargoCapacity = cargoCapacity;
+        this.shippings = new ArrayList<>();
+    }
+    
+    
 }
