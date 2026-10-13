@@ -33,7 +33,7 @@ public class Client {
 //                LocalDate.of(2024, 1, 10), LocalDate.of(2024, 5, 5), 
 //                Status.DELIVERED, link.getVehicle(4));
     public void makeShipping(String code, LogisticsCenter originCenter, LogisticsCenter destinationCenter, LocalDate registrationDate, LocalDate deliveryDate, Status status, Vehicle vehicle ){
-        Shipping shipping;
+        Shipping shipping = new Shipping(code,this,originCenter,destinationCenter,registrationDate,deliveryDate,status,vehicle);
     }
 
     public int getId() {

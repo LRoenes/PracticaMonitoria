@@ -23,7 +23,9 @@ public class Shipping {
     private Status status;
     private List<Package> packages;
 
-    public Shipping(String code, Client client, LogisticsCenter originCenter, LogisticsCenter destinationCenter, LocalDate registrationDate, LocalDate deliveryDate, Status status) {
+   
+
+    public Shipping(String code, Client client, LogisticsCenter originCenter, LogisticsCenter destinationCenter, LocalDate registrationDate, LocalDate deliveryDate, Status status, Vehicle vehicle) {
         this.code = code;
         this.client = client;
         this.originCenter = originCenter;
