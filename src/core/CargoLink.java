@@ -16,4 +16,12 @@ public class CargoLink {
     private List<Client> clients;
     private List<LogisticCenters> centers;
     private List<Vehicle> vehicles;
+
+    public CargoLink() {
+        this.clients = new ArrayList<>();
+        this.centers = new ArrayList<>();
+        this.vehicles = new ArrayList<>();
+    }
+    
+    
 }

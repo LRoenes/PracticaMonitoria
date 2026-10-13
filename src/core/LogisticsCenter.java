@@ -17,4 +17,15 @@ public class LogisticsCenter {
     private float latitude;
     private float longtitude;
     private ArrayList<Shipping> shippings;
+
+    public LogisticsCenter(String name, String city, String country, float latitude, float longtitude) {
+        this.name = name;
+        this.city = city;
+        this.country = country;
+        this.latitude = latitude;
+        this.longtitude = longtitude;
+        this.shippings = new ArrayList<>();
+    }
+    
+    
 }
