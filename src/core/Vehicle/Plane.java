@@ -9,5 +9,5 @@ package core.Vehicle;
  * @author Luis
  */
 public class Plane extends Vehicle{
-    
+    private String code;
 }

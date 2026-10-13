@@ -4,10 +4,17 @@
  */
 package core;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Luis
  */
 public class LogisticsCenter {
-    
+    private String name;
+    private String city;
+    private String country;
+    private float latitude;
+    private float longtitude;
+    private ArrayList<Shipping> shippings;
 }
