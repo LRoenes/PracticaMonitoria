@@ -28,7 +28,7 @@ public class CargoLink {
         return true;
     }
     
-    public boolean addLogisticsCenter(String name, String city, String street, float latitude, float longitude){
+    public boolean addLogisticsCenter(String name, String city, String street, double latitude, double longitude){
         LogisticsCenter center = new LogisticsCenter(name, city, street, latitude, longitude);
         this.centers.add(center);
         return true;
