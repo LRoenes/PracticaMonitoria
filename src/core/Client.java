@@ -4,6 +4,7 @@
  */
 package core;
 
+import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -23,6 +24,16 @@ public class Client {
         this.name = name;
         this.address = address;
         this.email = email;
+    }
+    
+    
+//    makeShipping(
+//                "S00011", link.getLogisticsCenter(0), link.getLogisticsCenter(2), 
+//                LocalDate.of(2024, 1, 10), LocalDate.of(2024, 5, 5), 
+//                Status.DELIVERED, link.getVehicle(4));
+
+    public int getId() {
+        return id;
     }
 
 }
