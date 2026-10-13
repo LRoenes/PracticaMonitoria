@@ -47,4 +47,12 @@ public class CargoLink {
         }
         return null;
     }
+    
+    public Vehicle getVehicle(int index){
+        return vehicles.get(index);
+    }
+    
+    public LogisticsCenter getLogisticsCenter(int index){
+        return centers.get(index);
+    }
 }

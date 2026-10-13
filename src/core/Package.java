@@ -12,4 +12,12 @@ public class Package {
     private float weight;
     private Content type;
     private float value;
+
+    public Package(float weight, Content type, float value) {
+        this.weight = weight;
+        this.type = type;
+        this.value = value;
+    }
+    
+    
 }
