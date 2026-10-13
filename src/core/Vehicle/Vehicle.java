@@ -4,10 +4,13 @@
  */
 package core.Vehicle;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Luis
  */
 public abstract class Vehicle {
-    
+    protected float cargoCapacity;
+    protected ArrayList<Shipping> shippings;
 }
