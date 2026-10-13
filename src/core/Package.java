@@ -9,5 +9,7 @@ package core;
  * @author Revan
  */
 public class Package {
-    
+    private float weight;
+    private Content type;
+    private float value;
 }

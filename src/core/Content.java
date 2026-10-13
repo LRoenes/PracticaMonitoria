@@ -8,6 +8,9 @@ package core;
  *
  * @author Revan
  */
-public class Content {
-    
+public enum Content {
+    DOCUMENTS,
+    ELECTRONICS,
+    CLOTHING,
+    OTHERS
 }
