@@ -9,5 +9,5 @@ package core.Vehicle;
  * @author Luis
  */
 public class Truck extends Vehicle{
-    
+    private String licensePlate;
 }
