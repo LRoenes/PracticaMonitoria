@@ -23,5 +23,28 @@ public class CargoLink {
         this.vehicles = new ArrayList<>();
     }
     
+    public boolean addClient(Client client){
+        this.clients.add(client);
+        return true;
+    }
     
+    public boolean addLogisticsCenter(String name, String city, String street, float latitude, float longitude){
+        LogisticsCenter center = new LogisticsCenter(name, city, street, latitude, longitude);
+        this.centers.add(center);
+        return true;
+    }
+    
+    public boolean addVehicle(Vehicle vehicle){
+        this.vehicles.add(vehicle);
+        return true;
+    }
+    
+    public Client getClient(int clientId){
+        for(Client client: this.clients){
+            if(client.getId() == clientId){
+                return client;
+            }
+        }
+        return null;
+    }
 }
