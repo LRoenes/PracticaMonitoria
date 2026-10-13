@@ -39,5 +39,14 @@ public class Client {
     public int getId() {
         return id;
     }
+    
+    public Shipping getShipping(int code){
+        for(Shipping shipping : this.shippings){
+            if(shipping.getCode().equals(code)){
+                return shipping;
+            }
+        }
+        return null;
+    }
 
 }

@@ -35,5 +35,9 @@ public class Shipping {
         this.status = status;
     }
     
+    public String getCode(){
+        return this.code;
+    }
+    
     
 }
