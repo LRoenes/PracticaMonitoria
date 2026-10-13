@@ -16,4 +16,13 @@ public class Client {
     private String address;
     private String email;
     private List<Shipping> shippings;
+    //link.addClient(new Client(2000501, "John Doe", "123 Main St", "john.doe@example.com"));
+    
+    public Client(int id, String name, String address, String email){
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.email = email;
+    }
+
 }
