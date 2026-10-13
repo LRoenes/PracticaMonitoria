@@ -1,4 +1,5 @@
 import core.CargoLink;
+import core.Client;
 import core.Status;
 import java.time.LocalDate;
 
