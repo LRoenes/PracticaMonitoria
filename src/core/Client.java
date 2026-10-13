@@ -43,7 +43,7 @@ public class Client {
         return id;
     }
     
-    public Shipping getShipping(int code){
+    public Shipping getShipping(String code){
         for(Shipping shipping : this.shippings){
             if(shipping.getCode().equals(code)){
                 return shipping;
