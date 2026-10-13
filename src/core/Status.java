@@ -8,6 +8,8 @@ package core;
  *
  * @author Revan
  */
-class Status {
-    
+public enum Status {
+    IN_TRANSIT,
+    DELIVERED,
+    CANCELED
 }

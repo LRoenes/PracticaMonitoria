@@ -4,10 +4,20 @@
  */
 package core;
 
+import java.util.Date;
+import java.util.List;
+
 /**
  *
  * @author Revan
  */
 public class Shipping {
-    
+    private String code;
+    private Client client;
+    private LogisticsCenter originCenter;
+    private LogisticsCenter destinationCenter;
+    private Date registrationDate;
+    private Date deliveryDate;
+    private Status status;
+    private List<Package> packages;
 }

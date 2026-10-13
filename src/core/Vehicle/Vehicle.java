@@ -12,5 +12,5 @@ import java.util.ArrayList;
  */
 public abstract class Vehicle {
     protected float cargoCapacity;
-    protected ArrayList<Shipping> shippings;
+    protected List<Shipping> shippings;
 }

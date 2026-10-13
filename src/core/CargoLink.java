@@ -4,14 +4,16 @@
  */
 package core;
 
+import core.Vehicle.Vehicle;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
  * @author Luis
  */
 public class CargoLink {
-    private ArrayList<Client> clients;
-    private ArrayList<LogisticCenters> centers;
-    private ArrayList<Vehicle> vehicles;
+    private List<Client> clients;
+    private List<LogisticCenters> centers;
+    private List<Vehicle> vehicles;
 }
