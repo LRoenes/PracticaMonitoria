@@ -38,6 +38,11 @@ public class Shipping {
     public String getCode(){
         return this.code;
     }
+    //addPackage(30.256, Content.ELECTRONICS, 1518.64);
+    public void addPackage(float weight, Content type, float value){
+        Package pAckage = new Package(weight,type,value);
+        this.packages.add(pAckage);
+    }
     
     
 }

@@ -6,6 +6,7 @@ package core;
 
 import core.Vehicle.Vehicle;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -25,6 +26,7 @@ public class Client {
         this.name = name;
         this.address = address;
         this.email = email;
+        this.shippings = new ArrayList<>();
     }
     
     
@@ -34,6 +36,7 @@ public class Client {
 //                Status.DELIVERED, link.getVehicle(4));
     public void makeShipping(String code, LogisticsCenter originCenter, LogisticsCenter destinationCenter, LocalDate registrationDate, LocalDate deliveryDate, Status status, Vehicle vehicle ){
         Shipping shipping = new Shipping(code,this,originCenter,destinationCenter,registrationDate,deliveryDate,status,vehicle);
+        this.shippings.add(shipping);
     }
 
     public int getId() {
