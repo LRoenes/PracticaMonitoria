@@ -14,11 +14,11 @@ public class LogisticsCenter {
     private String name;
     private String city;
     private String country;
-    private float latitude;
-    private float longtitude;
+    private double latitude;
+    private double longtitude;
     private ArrayList<Shipping> shippings;
 
-    public LogisticsCenter(String name, String city, String country, float latitude, float longtitude) {
+    public LogisticsCenter(String name, String city, String country, double latitude, double longtitude) {
         this.name = name;
         this.city = city;
         this.country = country;

@@ -1,6 +1,9 @@
 import core.CargoLink;
 import core.Client;
 import core.Status;
+import core.Vehicle.Plane;
+import core.Vehicle.Ship;
+import core.Vehicle.Truck;
 import java.time.LocalDate;
 
 public class MainParcial2038 {
