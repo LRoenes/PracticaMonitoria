@@ -8,6 +8,7 @@ import core.Vehicle.Plane;
 import core.Vehicle.Truck;
 import core.Vehicle.Ship;
 import core.Vehicle.Vehicle;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -170,5 +171,11 @@ public class CargoLink {
                 }
             }
             return value;
+    }
+
+    public Client getClientMaxPackages(LocalDate start, LocalDate end) {
+        
+        
+        return null;
     }
 }

@@ -60,6 +60,13 @@ public class Client {
         return name;
     }
     
+    public List<Package> getPackagesBetweenDates(LocalDate start, LocalDate end){
+        for(Shipping shipping : this.shippings){
+            
+        }
+        return null;
+    }
+    
     
 
 }
