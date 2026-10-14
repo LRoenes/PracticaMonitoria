@@ -27,5 +27,17 @@ public class LogisticsCenter {
         this.shippings = new ArrayList<>();
     }
     
+    public String getName(){
+        return this.name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+    
     
 }

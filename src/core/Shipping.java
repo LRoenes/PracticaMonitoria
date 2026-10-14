@@ -6,6 +6,7 @@ package core;
 
 import core.Vehicle.Vehicle;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -39,10 +40,13 @@ public class Shipping {
         return this.code;
     }
     //addPackage(30.256, Content.ELECTRONICS, 1518.64);
-    public void addPackage(float weight, Content type, float value){
+    public void addPackage(double weight, Content type, double value){
         Package pAckage = new Package(weight,type,value);
         this.packages.add(pAckage);
     }
     
+    public List<Package> getPackages(){
+        return packages;
+    }
     
 }

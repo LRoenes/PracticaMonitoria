@@ -1,3 +1,5 @@
+package main;
+
 import core.CargoLink;
 import core.Client;
 import core.Content;

@@ -13,13 +13,16 @@ import java.util.List;
  * @author Luis
  */
 public abstract class Vehicle {
-    protected float cargoCapacity;
+    protected double cargoCapacity;
     protected List<Shipping> shippings;
 
-    public Vehicle(float cargoCapacity) {
+    public Vehicle(double cargoCapacity) {
         this.cargoCapacity = cargoCapacity;
         this.shippings = new ArrayList<>();
     }
     
+    public List<Shipping> getShippings(){
+        return shippings;
+    }
     
 }

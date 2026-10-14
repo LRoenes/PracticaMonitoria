@@ -11,7 +11,7 @@ package core.Vehicle;
 public class Plane extends Vehicle{
     private String code;
 
-    public Plane(float cargoCapacity, String code) {
+    public Plane(double cargoCapacity, String code) {
         super(cargoCapacity);
         this.code = code;
     }
