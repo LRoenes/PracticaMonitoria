@@ -48,6 +48,14 @@ public class Shipping {
     public List<Package> getPackages(){
         return this.packages;
     }
+
+    public LocalDate getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public LocalDate getDeliveryDate() {
+        return deliveryDate;
+    }
     
     
     

@@ -11,8 +11,10 @@ import core.Vehicle.Vehicle;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -174,8 +176,13 @@ public class CargoLink {
     }
 
     public Client getClientMaxPackages(LocalDate start, LocalDate end) {
+        HashMap<Client,Integer> frecuencia = new HashMap<>();
         
+        for (Client client : this.clients){
+            int num = client.getNumPackagesBetweenDates(start, end);
+            frecuencia.put(client,num);
+        }
         
-        return null;
+        return Collections.max(frecuencia.entrySet(),Map.Entry.comparingByValue()).getKey();
     }
 }

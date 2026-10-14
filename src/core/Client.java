@@ -60,11 +60,14 @@ public class Client {
         return name;
     }
     
-    public List<Package> getPackagesBetweenDates(LocalDate start, LocalDate end){
+    public int getNumPackagesBetweenDates(LocalDate start, LocalDate end){
+        int num = 0;
         for(Shipping shipping : this.shippings){
-            
+            if (shipping.getRegistrationDate().isAfter(start) && shipping.getDeliveryDate().isBefore(end)){
+                num += shipping.getPackages().size();
+            }
         }
-        return null;
+        return num;
     }
     
     
