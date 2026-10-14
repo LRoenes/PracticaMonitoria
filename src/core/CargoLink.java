@@ -160,4 +160,15 @@ public class CargoLink {
         }
         return clients.get(indexFound);
     }
+
+    public double getHighestDeclaredValue() {
+        Client client = this.getClientHighestDeclaredValue();
+        double value = 0;
+            for(Shipping shipping: client.getShippings()){
+                for(Package pack: shipping.getPackages()){
+                    value += pack.getValue();
+                }
+            }
+            return value;
+    }
 }
