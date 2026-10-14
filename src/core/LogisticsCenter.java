@@ -38,6 +38,11 @@ public class LogisticsCenter {
     public String getCountry() {
         return country;
     }
+
+    public ArrayList<Shipping> getShippings() {
+        return shippings;
+    }
+    
     
     
 }

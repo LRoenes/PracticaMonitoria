@@ -22,9 +22,8 @@ public class Shipping {
     private LocalDate registrationDate;
     private LocalDate deliveryDate;
     private Status status;
+    private Vehicle vehicle;
     private List<Package> packages;
-
-   
 
     public Shipping(String code, Client client, LogisticsCenter originCenter, LogisticsCenter destinationCenter, LocalDate registrationDate, LocalDate deliveryDate, Status status, Vehicle vehicle) {
         this.code = code;
@@ -34,6 +33,18 @@ public class Shipping {
         this.registrationDate = registrationDate;
         this.deliveryDate = deliveryDate;
         this.status = status;
+        this.vehicle = vehicle;
+        this.packages = new ArrayList<>();
+        
+        if (originCenter != null) {
+            originCenter.getShippings().add(this);
+        }
+        if (destinationCenter != null && destinationCenter != originCenter) {
+            destinationCenter.getShippings().add(this);
+        }
+        if (vehicle != null) {
+            vehicle.getShippings().add(this);
+        }
     }
     
     public String getCode(){
@@ -56,9 +67,8 @@ public class Shipping {
     public LocalDate getDeliveryDate() {
         return deliveryDate;
     }
-    
-    
-    
 
-    
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
 }
