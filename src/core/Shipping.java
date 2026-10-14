@@ -44,5 +44,9 @@ public class Shipping {
         this.packages.add(pAckage);
     }
     
+    public List<Package> getPackages(){
+        return this.packages;
+    }
+    
     
 }

@@ -18,6 +18,11 @@ public class Package {
         this.type = type;
         this.value = value;
     }
+
+    public Content getType() {
+        return type;
+    }
+    
     
     
 }

@@ -6,6 +6,8 @@ package core;
 
 import core.Vehicle.Vehicle;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -55,4 +57,38 @@ public class CargoLink {
     public LogisticsCenter getLogisticsCenter(int index){
         return centers.get(index);
     }
+
+    public void packageSummary() {
+        HashMap<Content,List<Double>> frecuencia = new HashMap<>();
+        List<Double> values = new ArrayList<>(Arrays.asList(0.0,0.0,0.0));
+        
+        System.out.println("Package summary:");
+        for(Client client : this.clients){
+            for (Shipping shipping : client.getShippings()){
+                for (Package pAckage : shipping.getPackages()){
+                    Content content = pAckage.getType();
+                    frecuencia.put(content, frecuencia.getOrDefault(frecuencia.get(content), new ArrayList<Double>(Arrays.asList(0.0,0.0,0.0))));
+                    
+                }
+            }
+        }
+    }
+//    Package summary:
+//- DOCUMENTS
+//  - Number of packages: 8
+//  - Total weight of packages: 4,094 kg
+//  - Total value of packages: $463,17
+//- ELECTRONICS
+//  - Number of packages: 8
+//  - Total weight of packages: 287,399 kg
+//  - Total value of packages: $18552,17
+//- CLOTHING
+//  - Number of packages: 7
+//  - Total weight of packages: 78,126 kg
+//  - Total value of packages: $3662,41
+//- OTHERS
+//  - Number of packages: 9
+//  - Total weight of packages: 160,937 kg
+//  - Total value of packages: $2804,08
+
 }

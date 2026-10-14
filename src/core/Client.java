@@ -51,5 +51,10 @@ public class Client {
         }
         return null;
     }
+    
+    public List<Shipping> getShippings(){
+        return this.shippings;
+    }
+    
 
 }
