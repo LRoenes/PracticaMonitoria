@@ -135,4 +135,22 @@ public class CargoLink {
         System.out.println("Vehicle Summary: \n-PLANE\n-Quantity: " + planeCounter + "\n-Number of shippings: " + planeShippingCounter + "\n-Number of packages: " + planePackageCounter);
         System.out.println("Vehicle Summary: \n-SHIP\n-Quantity: " + shipCounter + "\n-Number of shippings: " + shipShippingCounter + "\n-Number of packages: " + shipPackageCounter);
     }
+    public Client getClientHighestDeclaredValue(){
+        double value = 0, highestValue = 0;
+        int index = 0, indexFound = 0;
+        for(Client client: this.clients){
+            value = 0;
+            for(Shipping shipping: client.getShippings()){
+                for(Package pack: shipping.getPackages()){
+                    value += pack.getValue();
+                }
+            }
+            if(value > highestValue){
+                highestValue = value;
+                indexFound = index;
+            }
+            index++;
+        }
+        return clients.get(indexFound);
+    }
 }

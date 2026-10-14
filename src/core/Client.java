@@ -55,6 +55,11 @@ public class Client {
     public List<Shipping> getShippings(){
         return this.shippings;
     }
+
+    public String getName() {
+        return name;
+    }
+    
     
 
 }
