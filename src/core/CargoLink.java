@@ -78,11 +78,18 @@ public class CargoLink {
                     double currentWeight = accumulators.get(1);
                     double currentValue = accumulators.get(2);
                     accumulators.set(0, currentNum+1);
-                    accumulators.set(0, currentWeight+pAckage.getWeight());
-                    accumulators.set(0, currentValue+pAckage.getValue());
+                    accumulators.set(1, currentWeight+pAckage.getWeight());
+                    accumulators.set(2, currentValue+pAckage.getValue());
+                    frecuencia.put(content,accumulators);
                     
                 }
             }
+        }
+        for (Content key : frecuencia.keySet()){
+            System.out.println("- "+key);
+            System.out.println(" - Number of packages: " +frecuencia.get(key).get(0).intValue());
+            System.out.println(" - Total weight of packages: "+frecuencia.get(key).get(1)+" kg");
+            System.out.println(" - Total value of packages: " + frecuencia.get(key).get(2));
         }
     }
 //    Package summary:
