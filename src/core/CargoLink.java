@@ -62,7 +62,7 @@ public class CargoLink {
         return centers.get(index);
     }
 
-<<<<<<< HEAD
+
     public void packageSummary() {
         HashMap<Content,List<Double>> frecuencia = new HashMap<>();
         List<Double> values = new ArrayList<>(Arrays.asList(0.0,0.0,0.0));
@@ -103,7 +103,6 @@ public class CargoLink {
 //  - Total weight of packages: 160,937 kg
 //  - Total value of packages: $2804,08
 
-=======
     public void vehicleSummary() {
         int truckCounter = 0, planeCounter = 0, shipCounter = 0;
         int truckShippingCounter = 0, planeShippingCounter = 0, shipShippingCounter = 0;
@@ -136,5 +135,4 @@ public class CargoLink {
         System.out.println("Vehicle Summary: \n-PLANE\n-Quantity: " + planeCounter + "\n-Number of shippings: " + planeShippingCounter + "\n-Number of packages: " + planePackageCounter);
         System.out.println("Vehicle Summary: \n-SHIP\n-Quantity: " + shipCounter + "\n-Number of shippings: " + shipShippingCounter + "\n-Number of packages: " + shipPackageCounter);
     }
->>>>>>> cf7cf6e6bfff2cc0fa2c89f13f04a67141f2d266
 }
