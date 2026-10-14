@@ -68,6 +68,13 @@ public class CargoLink {
                 for (Package pAckage : shipping.getPackages()){
                     Content content = pAckage.getType();
                     frecuencia.put(content, frecuencia.getOrDefault(frecuencia.get(content), new ArrayList<Double>(Arrays.asList(0.0,0.0,0.0))));
+                    List<Double> accumulators = frecuencia.getOrDefault(content, new ArrayList<Double>(Arrays.asList(0.0,0.0,0.0)));
+                    double currentNum = accumulators.get(0);
+                    double currentWeight = accumulators.get(1);
+                    double currentValue = accumulators.get(2);
+                    accumulators.set(0, currentNum+1);
+                    accumulators.set(0, currentWeight+pAckage.getWeight());
+                    accumulators.set(0, currentValue+pAckage.getValue());
                     
                 }
             }

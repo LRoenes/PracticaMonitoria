@@ -22,6 +22,14 @@ public class Package {
     public Content getType() {
         return type;
     }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public double getValue() {
+        return value;
+    }
     
     
     
