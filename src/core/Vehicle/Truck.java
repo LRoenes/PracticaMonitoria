@@ -11,7 +11,7 @@ package core.Vehicle;
 public class Truck extends Vehicle{
     private String licensePlate;
 
-    public Truck(float cargoCapacity, String licensePlate) {
+    public Truck(double cargoCapacity, String licensePlate) {
         super(cargoCapacity);
         this.licensePlate = licensePlate;
     }

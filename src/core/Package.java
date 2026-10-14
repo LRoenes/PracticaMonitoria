@@ -9,11 +9,11 @@ package core;
  * @author Revan
  */
 public class Package {
-    private float weight;
+    private double weight;
     private Content type;
-    private float value;
+    private double value;
 
-    public Package(float weight, Content type, float value) {
+    public Package(double weight, Content type, double value) {
         this.weight = weight;
         this.type = type;
         this.value = value;

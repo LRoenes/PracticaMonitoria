@@ -1,10 +1,9 @@
+package main;
+
 import core.CargoLink;
 import core.Client;
-<<<<<<< HEAD
 import core.Content;
 import core.LogisticsCenter;
-=======
->>>>>>> ab38b8667c1537b3d36d0483184e2b6b386ec896
 import core.Status;
 import core.Vehicle.Plane;
 import core.Vehicle.Ship;
