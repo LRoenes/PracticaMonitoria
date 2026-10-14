@@ -21,5 +21,8 @@ public abstract class Vehicle {
         this.shippings = new ArrayList<>();
     }
     
+    public List<Shipping> getShippings(){
+        return shippings;
+    }
     
 }

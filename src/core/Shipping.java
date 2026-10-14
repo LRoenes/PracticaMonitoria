@@ -6,6 +6,7 @@ package core;
 
 import core.Vehicle.Vehicle;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -45,8 +46,13 @@ public class Shipping {
     }
     
     public List<Package> getPackages(){
+<<<<<<< HEAD
         return this.packages;
     }
     
+=======
+        return packages;
+    }
+>>>>>>> cf7cf6e6bfff2cc0fa2c89f13f04a67141f2d266
     
 }
